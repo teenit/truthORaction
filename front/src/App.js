@@ -7,6 +7,8 @@ import './ButtonClickHere.css'
 import ButtonReadMore from './ButtonReadMore';
 import './ButtonReadMore.css'
 
+import ButtonLearnMore from './ButtonLearnMore';
+import './ButtonLearnMore.css';
 function App() {
   const mas = [49849, 4878, 77877, 778787];
   var questions = [
@@ -21,6 +23,7 @@ function App() {
   return (
     <div className='App'>
       <Vanya questions={questions}/>
+      <ButtonLearnMore />
       <ButtonClickHere/>
       <ButtonReadMore />
     </div>

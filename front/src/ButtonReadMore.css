@@ -1,0 +1,30 @@
+.ButtonReadMore{
+    background: rgb(0,186,212);
+    background: linear-gradient(90deg, rgba(0,186,212,1) 15%, rgba(0,255,175,1) 100%);
+    align-items: center;
+    color: black;
+    font-weight: 800;
+    width: max-content;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.ButtonReadMore-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 20px;
+    font-size: 35px;
+}
+.ButtonReadMore-icon{
+    font-size: 30px;
+}
+.ButtonReadMore:hover{
+    background: rgb(0,255,175);
+    background: linear-gradient(90deg, rgba(0,255,175,1) 15%, rgba(0,186,212,1) 100%);
+    transition: 0.5s;
+}

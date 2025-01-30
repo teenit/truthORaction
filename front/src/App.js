@@ -9,6 +9,9 @@ import './ButtonReadMore.css'
 
 import ButtonLearnMore from './ButtonLearnMore';
 import './ButtonLearnMore.css';
+
+import Button from './Button';
+import './Button.css'
 function App() {
   const mas = [49849, 4878, 77877, 778787];
   var questions = [
@@ -26,6 +29,7 @@ function App() {
       <ButtonLearnMore />
       <ButtonClickHere/>
       <ButtonReadMore />
+      <Button />
     </div>
   );
 }

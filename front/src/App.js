@@ -1,26 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Vanya from './Vanya';
-import ButtonClickHere from './ButtonClickHere';
-import './ButtonClickHere.css'
-import ButtonSubcribe from './ButtonSubcribe';
-import './ButtonSubcribe.css'
+import Denis from './components/Denis/Denis';
+import Pavlo from './components/Pavlo/Pavlo';
+import Vanya from './components/Vanya/Vanya';
+
 
 function App() {
-  const mas = [49849, 4878, 77877, 778787];
-  var questions = [
-    {id: 1, ques: "Питання 1"},
-    {id: 2, ques: "Питання 2"},
-    {id: 3, ques: "Питання 3"},
-    {id: 4, ques: "Питання 4"},
-    {id: 5, ques: "Питання 5"},
-    {id: 6, ques: "Питання 6"},
-    {id: 7, ques: "Питання 7"},
-  ]
   return (
     <div className='App'>
-      <Vanya questions={questions}/>
-      <ButtonClickHere/>
+        <Vanya />
+        <hr />
+        <Denis />
+        <hr />
+        <Pavlo />
     </div>
   );
 }

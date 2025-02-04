@@ -1,17 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Vanya from './Vanya';
-
 import ButtonClickHere from './ButtonClickHere';
 import './ButtonClickHere.css'
-import ButtonReadMore from './ButtonReadMore';
-import './ButtonReadMore.css'
+import ButtonSubcribe from './ButtonSubcribe';
+import './ButtonSubcribe.css'
 
-import ButtonLearnMore from './ButtonLearnMore';
-import './ButtonLearnMore.css';
-
-import Button from './Button';
-import './Button.css'
 function App() {
   const mas = [49849, 4878, 77877, 778787];
   var questions = [
@@ -26,10 +20,7 @@ function App() {
   return (
     <div className='App'>
       <Vanya questions={questions}/>
-      <ButtonLearnMore />
       <ButtonClickHere/>
-      <ButtonReadMore />
-      <Button />
     </div>
   );
 }

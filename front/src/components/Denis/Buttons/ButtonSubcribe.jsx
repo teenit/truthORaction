@@ -1,5 +1,5 @@
 import React from "react";
-
+import './ButtonSubcribe.css'
 const ButtonSubcribe = () => {
     return (
         <div className="ButtonSubcribe">

@@ -1,5 +1,5 @@
 import React from "react";
-
+import './InputDenis.css'
 const InputDenis = (props) => {
     return (
         <div className="InputDenis">

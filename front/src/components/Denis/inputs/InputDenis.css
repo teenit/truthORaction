@@ -1,0 +1,37 @@
+.InputDenis {
+    width: 400px;
+    height: 60px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 180, 216, 0.3);
+    transition: transform 0.3s ease;
+}
+.InputDenis:hover {
+    transform: scale(1.02);
+}
+.InputDenis input {
+    width: 340px;
+    height: 40px;
+    background-color: rgba(202, 240, 248, 0.4);
+    color: #023e8a;
+    border: 2px solid #ade8f4;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.InputDenis input::placeholder {
+    color: #48cae4;
+    opacity: 0.8;
+    font-style: italic;
+}
+.InputDenis input:focus {
+    background-color: rgba(202, 240, 248, 0.7);
+    border-color: #00b4d8;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.4);
+}

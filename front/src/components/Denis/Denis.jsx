@@ -1,20 +1,29 @@
 import React, { useState } from "react"; 
-import ButtonClickHere from "./Buttons/ButtonClickHere";
-import ButtonSubcribe from "./Buttons/ButtonSubcribe";
-import InputDenis from "./inputs/InputDenis";
-
+import { Button, TextField } from "@mui/material";
 
 const Denis = () => {
-const [state, setState] = useState("Word")
+const [state, setState] = useState({
+    login: "",
+    password: ""
+});
+
+const send = () => {
+    console.log(state);
+    
+}
     return (
         <div>
-            <ButtonClickHere click={()=>{
-                let count = Math.random();
-                setState("Hello" + count)
-                
-            }}/>
-            <ButtonSubcribe />
-            <InputDenis value={state}/>
+            <div className="Denis-form">
+                <TextField label="Login" value={state.login} onChange={(e)=>{
+                    setState({...state, login: e.target.value})
+                    
+                }}/>
+                <TextField label="Password" type="password" value={state.password}onChange={(e)=>{
+                    setState({...state, password: e.target.value})
+                    
+                }}/>
+                <Button onClick={send}>Enter</Button>
+            </div>
         </div>
     )
 }

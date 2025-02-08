@@ -1,20 +1,29 @@
+import {Button, TextField } from "@mui/material";
 import React, { useState } from "react";
-import Button from "./buttons/Button";
-import ButtonReadMore from "./buttons/ButtonReadMore";
-import InputIvan from "./Inputs/InputIvan";
 
 const Vanya = () => {
-const [state, setState] = useState("")
-const [count, setCount] = useState(0)
+const [state, setState] = useState({
+    login: "",
+    password: ""
+})
+
+const send = () =>{
+    console.log(state);
+    
+}
 
     return (
         <div>
-            <Button />
-            <ButtonReadMore click={()=>{
-                let count = Math.random();
-                setState("hello" + count)
-            }}/>
-            <InputIvan value={state}/>
+            <div className="Ivan-form">
+                <TextField label="Login" value={state.login} onChange={(e)=>{
+                    setState({...state,login: e.target.value})
+                    
+                }}/>
+                <TextField label="Password" type="password" value={state.password} onChange={(e)=>{
+                    setState({...state,password: e.target.value})
+                }}/>
+                <Button variant="contained"onClick={send}>Enter</Button>
+            </div>
         </div>
     )
 }

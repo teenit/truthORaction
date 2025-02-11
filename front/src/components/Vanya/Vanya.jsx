@@ -1,19 +1,7 @@
 import {Button, TextField } from "@mui/material";
 import React, { useState } from "react";
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
-const inner = document.getElementById('inner')
 
-export function SwitchLabels() {
-    return (
-      <FormGroup>
-        <FormControlLabel control={<Switch defaultChecked />} label="Label" />
-        <FormControlLabel required control={<Switch />} label="Required" />
-        <FormControlLabel disabled control={<Switch />} label="Disabled" />
-      </FormGroup>
-    );
-  }
+
 
 const Vanya = () => {
 const [state, setState] = useState({
@@ -26,13 +14,7 @@ const send = () =>{
     
 }
 
-const Change = () =>{
-    if(inner.style.backgroundColor == "rgb(39, 39, 39)"){
-        inner.style.backgroundColor = "white"
-    }else{
-        inner.style.backgroundColor = "rgb(39, 39, 39)"
-    }
-}
+
 
     return (
         <div>
@@ -45,7 +27,6 @@ const Change = () =>{
                     setState({...state,password: e.target.value})
                 }}/>
                 <Button variant="contained"onClick={send}>Enter</Button>
-                <FormControlLabel onClick={Change} control={<Switch defaultChecked />} label="" />
             </div>
         </div>
     )

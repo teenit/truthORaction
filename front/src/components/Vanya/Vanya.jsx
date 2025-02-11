@@ -1,9 +1,10 @@
-const inner = document.getElementById('inner')
 import {Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+const inner = document.getElementById('inner')
+
 export function SwitchLabels() {
     return (
       <FormGroup>

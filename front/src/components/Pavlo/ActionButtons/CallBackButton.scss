@@ -1,0 +1,66 @@
+.CallBackButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #787878;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  &-animate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    &-background {
+      background-color: #787878;
+      opacity: .5;
+      animation-name: backSize;
+    }
+    &-border {
+      border: solid 1px #787878;
+      opacity: 0;
+      box-sizing: border-box;
+      animation-name: borderSize;
+    }
+  }
+}
+
+@keyframes backSize {
+  from {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+  }
+  to {
+    width: 100px;
+    height: 100px;
+    left: -10px;
+    top: -10px;
+  }
+}
+
+@keyframes borderSize {
+  from {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: .3;
+  }
+  to {
+    width: 120px;
+    height: 120px;
+    left: -20px;
+    top: -20px;
+    opacity: 0.7;
+  }
+}

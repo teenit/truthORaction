@@ -1,0 +1,74 @@
+.CallBackButton{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #787878;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CallBackButton-img{
+    width: 60%;
+    border-radius: 50%;
+    position: relative;
+}
+.CallBackButton-animate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation-name: borderSize;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+.CallBackButton-animate-background{
+    background-color: #787878;
+    opacity: .5;
+    animation-name: backSize;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+.CallBackButton-animate-border{
+    border: solid 1px #787878;  
+    animation-name: borderSize;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+@keyframes backSize {
+    from{
+        width: 80px;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        width: 120px;
+        height: 120px;
+        left: -20px;
+        top: -20px;
+    }
+}
+
+@keyframes borderSize {
+    from{
+        width: 80px;
+        height: 80px;
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        width: 160px;
+        height: 160px;
+        left: -40px;
+        top: -40px;
+    }
+}

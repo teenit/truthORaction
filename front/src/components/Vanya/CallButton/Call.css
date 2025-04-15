@@ -1,0 +1,75 @@
+.callBack{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 153, 255);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.pulsing-circle{
+    animation-duration: 2s;
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 153, 255);
+    opacity: 100%;
+    position: absolute;
+    border-radius: 50%;
+}
+.pulsing-border{
+    animation-duration: 2s;
+    animation-name: border;
+    animation-iteration-count: infinite;
+    width: 100px;
+    height: 100px;
+    border: solid 2px rgb(0, 153, 255);
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+}
+  
+  @keyframes circle {
+    from {
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        opacity: 100%;
+    }
+  
+    to {
+        left: -25px;
+        top: -25px;
+        width: 150px;
+        height: 150px;
+        opacity: 0%;
+    }
+  }
+
+  @keyframes border {
+    from {
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        opacity: 100%;
+    }
+  
+    to {
+        left: -50px;
+        top: -50px;
+        width: 200px;
+        height: 200px;
+        opacity: 0%;
+    }
+  }

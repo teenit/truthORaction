@@ -5,9 +5,7 @@ const HomePage = () => {
 
     return(
         <div>
-            <NavLink to={"/vanya"}>Vanya</NavLink>
-            <NavLink to={"/denis"}>Denis</NavLink>
-            <NavLink to={"/pavlo"}>Pavlo</NavLink>
+            <h1>Truth or Action</h1>
         </div>
     )
 }

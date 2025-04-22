@@ -1,3 +1,22 @@
+.NavMain {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  position: relative;
+  z-index: 999;
+}
+.NavMain-right-menu {
+  position: absolute;
+  right: 0;
+  background-color: aquamarine;
+  width: max-content;
+  max-width: 300px;
+}
+.NavMain-right {
+  position: relative;
+}
 .line{
     width: 97%;
     height: 1px;

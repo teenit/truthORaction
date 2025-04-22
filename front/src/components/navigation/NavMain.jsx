@@ -9,7 +9,8 @@ const NavMain = () => {
     const [openSettings, setOpenSettings] = useState(false)
 
     return (
-        <div className="NavMain">
+        <>
+         <div className="NavMain">
             <div className="NavMain-left">
                 <Button onClick={() => { navigate("/") }} >Home</Button>
                 <Button onClick={() => { navigate("/vanya") }} > <FaUser /> Vaniy</Button>
@@ -36,8 +37,11 @@ const NavMain = () => {
             }
            
             </div>
-            <div className="line"></div>
+            
         </div>
+        <div className="line"></div>
+        </>
+       
     )
 }
 

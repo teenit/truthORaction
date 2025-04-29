@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaUser, FaCog } from "react-icons/fa";
 import { NavLink, useNavigate } from "react-router-dom";
 import './NavMain.scss';
+import SwitcherTheme from "../Vanya/SwitcherTheme";
 
 const NavMain = () => {
     const navigate = useNavigate();
@@ -29,7 +30,7 @@ const NavMain = () => {
                 </Button>
             {openSettings && 
              <div className="NavMain-right-menu">
-                <p>Item 1</p>
+                <p style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}><SwitcherTheme /> Theme</p>
                 <p>Item reker geriugberuig eiuhufre ireugierhgue rgueirghieurhger g erugiheruighuerhg 2</p>
                 <p>Item 3</p>
                 <p>Item 4</p>

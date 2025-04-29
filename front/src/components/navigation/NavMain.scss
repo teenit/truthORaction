@@ -10,9 +10,11 @@
 .NavMain-right-menu {
   position: absolute;
   right: 0;
-  background-color: aquamarine;
+  background-color: rgb(233, 233, 233);
   width: max-content;
   max-width: 300px;
+  border-radius: 20px;
+  border: solid 1px gray;
 }
 .NavMain-right {
   position: relative;

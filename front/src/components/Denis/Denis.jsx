@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"; 
 import { Button, TextField } from "@mui/material";
-import Loader from "./test/Loader";
+import Loader from "../Loaders/Loader";
 
 const Denis = () => {
 const [loader, setLoader] = useState(true)

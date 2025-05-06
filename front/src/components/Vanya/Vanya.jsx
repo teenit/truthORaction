@@ -4,8 +4,7 @@ import QuestionsWithTimer from "../Questions/QuestionsWithTimer";
 import Call from "./CallButton/Call";
 import CallBackButton from "./ActionButtons/CallBackButton/CallBackButton";
 import MessageButton from "./ActionButtons/MessageButton/MessageButton";
-import Loader from "./test/Loader";
-
+import Loader from './../Loaders/Loader'
 const Vanya = () => {
 const [loader,setLoader] = useState(true);
 const [state, setState] = useState({

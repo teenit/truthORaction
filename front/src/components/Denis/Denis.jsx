@@ -1,11 +1,19 @@
-import React, { useState } from "react"; 
+import React, { useState, useEffect } from "react"; 
 import { Button, TextField } from "@mui/material";
+import Loader from "./test/Loader";
 
 const Denis = () => {
+const [loader, setLoader] = useState(true)
 const [state, setState] = useState({
     login: "",
     password: ""
 });
+
+useEffect(()=>{
+    setTimeout(()=>{
+        setLoader(false)
+    },2000)
+}, []) 
 
 const send = () => {
     console.log(state);
@@ -14,7 +22,9 @@ const send = () => {
     return (
         <div>
             <div className="Denis-form">
-                <TextField label="Login" value={state.login} onChange={(e)=>{
+            { loader &&
+             <Loader />}
+                {/* <TextField label="Login" value={state.login} onChange={(e)=>{
                     setState({...state, login: e.target.value})
                     
                 }}/>
@@ -22,7 +32,8 @@ const send = () => {
                     setState({...state, password: e.target.value})
                     
                 }}/>
-                <Button onClick={send}>Enter</Button>
+                <Button onClick={send}>Enter</Button> */}
+
             </div>
         </div>
     )

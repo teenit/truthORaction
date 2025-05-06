@@ -5,6 +5,7 @@ import Call from "./CallButton/Call";
 import CallBackButton from "./ActionButtons/CallBackButton/CallBackButton";
 import MessageButton from "./ActionButtons/MessageButton/MessageButton";
 import Loader from './../Loaders/Loader'
+import './Vanya.scss'
 const Vanya = () => {
 const [loader,setLoader] = useState(true);
 const [state, setState] = useState({
@@ -14,7 +15,7 @@ const [state, setState] = useState({
 
 useEffect(()=>{
     setTimeout(() => {
-        setLoader(false)
+        setLoader(true)
     }, 500);
 }, [])
 
@@ -27,7 +28,7 @@ const send = () =>{
 
 
     return (
-        <div>
+        <div className="Vanya">
             <div className="Ivan-form">
                 {/* <TextField label="Login" value={state.login} onChange={(e)=>{
                     setState({...state,login: e.target.value})

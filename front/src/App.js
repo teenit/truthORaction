@@ -6,6 +6,7 @@ import HomePage from './components/pages/HomePage';
 import VanyaPage from './components/pages/VanyaPage';
 import DenisPage from './components/pages/DenisPage';
 import NavMain from './components/navigation/NavMain';
+import './components/pages/Page.scss';
 
 
 function App() {

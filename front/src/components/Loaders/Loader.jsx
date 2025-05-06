@@ -5,7 +5,6 @@ const Loader =()=>{
     return(
         <div className='Loader'>
             <CircularProgress size={'75px'}/>
-            <h4>Loading...</h4>
         </div>
     )
 }

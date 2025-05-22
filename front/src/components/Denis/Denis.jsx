@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"; 
 import { Button, TextField } from "@mui/material";
 import Loader from "../Loaders/Loader";
+import DenisCard from "../Cards/DenisCard";
 
 const Denis = () => {
 const [loader, setLoader] = useState(true)
@@ -34,7 +35,9 @@ const send = () => {
                 }}/>
                 <Button onClick={send}>Enter</Button> */}
 
+
             </div>
+            <DenisCard />
         </div>
     )
 }

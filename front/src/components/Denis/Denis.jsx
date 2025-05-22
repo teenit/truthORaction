@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; 
 import { Button, TextField } from "@mui/material";
 import Loader from "../Loaders/Loader";
-import DenisCard from "../Cards/DenisCard";
+import DenisCard from "../cards/DenisCard";
 
 const Denis = () => {
 const [loader, setLoader] = useState(true)

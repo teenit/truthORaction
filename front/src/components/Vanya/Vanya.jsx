@@ -6,6 +6,10 @@ import CallBackButton from "./ActionButtons/CallBackButton/CallBackButton";
 import MessageButton from "./ActionButtons/MessageButton/MessageButton";
 import Loader from './../Loaders/Loader'
 import './Vanya.scss'
+import Card from "../cards/Card";
+import Deck from "../cards/Deck";
+import TruthCard from "../cards/animated-cards/TruthCard";
+import ActionCard from "../cards/animated-cards/ActionCard";
 const Vanya = () => {
 const [loader,setLoader] = useState(true);
 const [state, setState] = useState({
@@ -43,9 +47,13 @@ const send = () =>{
                 {/* <Call /> */}
                 {/* <CallBackButton color={"rgb(0, 184, 0)"}/>
                 <MessageButton color={"rgb(0, 105, 167)"}/> */}
-                {loader &&
-                <Loader />}
+                {/* {loader &&
+                <Loader />} */}
             </div>
+            <Card />
+            <TruthCard />
+            <ActionCard />
+            <Deck />
         </div>
     )
 }

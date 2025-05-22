@@ -1,0 +1,54 @@
+.deckOne{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+}
+.card{
+    width: 70%;
+    height: 100%;
+    border: solid 2px black;
+    position: absolute;
+    left: 30px;
+    bottom: -80px;
+    background-image: url(Uzor.png);
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+.one{
+    rotate: calc(0deg);
+    z-index: 0;
+}
+.two{
+    rotate: calc(10deg);
+    z-index: 10;
+}.three{
+    rotate: calc(20deg);
+    z-index: 20;
+}.four{
+    rotate: calc(30deg);   
+    z-index: 30; 
+}
+.deckTwo{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: green;
+    rotate: calc(180deg);
+}
+.text{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}

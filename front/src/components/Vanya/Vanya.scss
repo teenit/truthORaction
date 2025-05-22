@@ -1,9 +1,13 @@
 .Vanya {
   position: relative;
-  min-height: 300px;
+  min-height: 700px;
   width: 80%;
-  box-shadow: 0 0 1px 0px #000;
+  box-shadow: 0 0 2px 0px #000;
   border-radius: 10px;
   margin: auto;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }

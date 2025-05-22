@@ -10,6 +10,7 @@ import Card from "../cards/Card";
 import Deck from "../cards/Deck";
 import TruthCard from "../cards/animated-cards/TruthCard";
 import ActionCard from "../cards/animated-cards/ActionCard";
+import DeckCardMain from "../cards/deckCards/DeckCardMain";
 const Vanya = () => {
 const [loader,setLoader] = useState(true);
 const [state, setState] = useState({
@@ -50,10 +51,7 @@ const send = () =>{
                 {/* {loader &&
                 <Loader />} */}
             </div>
-            <Card />
-            <TruthCard />
-            <ActionCard />
-            <Deck />
+            <DeckCardMain />
         </div>
     )
 }

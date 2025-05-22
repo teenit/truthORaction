@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import CallBackButton from "./ActionButtons/CallBackButton";
 import { FaUser } from 'react-icons/fa';
 import { FaAccusoft } from "react-icons/fa";
+import DeckCardMain from "../cards/deckCards/DeckCardMain";
 
 const Pavlo = () => {
     const [state, setState] = useState({
@@ -15,7 +16,7 @@ const Pavlo = () => {
     }
 
     return (
-        <div>
+        <div style={{position:'relative'}}>
             <div className="Pavlo-form">
                 <TextField label="Login" value={state.login} onChange={(e) => {
                     setState({ ...state, login: e.target.value })
@@ -56,6 +57,7 @@ const Pavlo = () => {
 
 
             <CallBackButton  FaUser={FaUser} />
+            <DeckCardMain />
         </div>
     )
 }

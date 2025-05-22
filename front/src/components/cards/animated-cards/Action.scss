@@ -1,8 +1,12 @@
 .container{
     position: absolute;
-    width: 100%;
-    min-height: 700px;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .ActionCard {
   width: 350px;
   height: 210px;
@@ -15,21 +19,24 @@
   border-radius: 15px;
   rotate: calc(90deg);
   transition: .5s;
-  z-index: 1000;
+  z-index: -1;
   opacity: 0;
   /* НЕ ставимо animation тут */
 }
 
 .animateCardA {
+  display: none;
   animation-name: CardAnimationA;
   animation-iteration-count: 1;
   animation-duration: 3s;
   animation-direction: alternate;
   animation-fill-mode: forwards; // ← Додати
+  z-index: 1000;
 }
 
 @keyframes CardAnimationA {
   0% {
+    display: block;
     width: 350px;
     height: 210px;
     right: -30px;
@@ -44,6 +51,7 @@
     bottom: 245px;
     rotate: calc(0deg);
     opacity: 100;
+    display: block;
   }
   50%{
     width: 350px;
@@ -52,6 +60,7 @@
     bottom: 245px;
     rotate: calc(0deg);
     opacity: 100;
+    display: block;
   }
   90%{
     width: 350px;
@@ -60,6 +69,7 @@
     bottom: 245px;
     rotate: calc(0deg);
     opacity: 0;
+    display: block;
   }
   100%{
     width: 350px;
@@ -68,5 +78,6 @@
     bottom: 100px;
     rotate: calc(90deg);
     opacity: 0;
+    display: none;
   }
 }

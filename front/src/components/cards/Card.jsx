@@ -1,7 +1,7 @@
 import React from "react";
 import './Card.scss';
 
-const Card = () =>{
+const Card = ({question = ""}) =>{
     // const cards = {
     //     card1:"Як звали вашого першого домашнього улюбленця?",
     //     card2:"У скільки років ви уперше пішли в школу?",
@@ -18,7 +18,7 @@ const Card = () =>{
     // )
     return(
         <div className="Card">
-            <div>Виберіть правду або дію</div>
+            <div>{question}</div>
         </div>
     )
 }

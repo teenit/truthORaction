@@ -51,6 +51,7 @@ const send = () =>{
                 {/* {loader &&
                 <Loader />} */}
             </div>
+            
             <DeckCardMain />
         </div>
     )

@@ -15,9 +15,17 @@ const ACTION_QUESTIONS = {
 }
 
 const TRUTH_QUESTIONS = {
-    0: "QUEST weifjiw 1",
-    1: "QUEST eifwji 2",
-    2: "QUEST ifweji 3",
+    0: "Як звали вашого першого домашнього улюбленця?",
+    1:"У скільки років ви уперше пішли в школу?",
+    2:"Твій найбільший страх?",
+    3:"Найбільший сором у житті?",
+    4:"Улюблений колір?",
+}
+
+const COLORS = {
+    truth: "#e7feee",
+    action: "#fee7e7",
+    empty: "#f0f0f5"
 }
 
 const Deck = () =>{
@@ -25,12 +33,15 @@ const Deck = () =>{
     const [isAnimatingAction, setIsAnimatingAction] = useState(false);
     const [isAnimatingTruth, setIsAnimatingTruth] = useState(false);
     const [activeQuestion, setActiveQuestion] = useState("");
+    const [activeColor, setActiveColor] = useState(COLORS["empty"]);
 
     const handleClickAction = () => {
 
         let question = getRandomQuestion(ACTION_QUESTIONS) 
-        
-        setTimeout(() => setActiveQuestion(question), 2200);
+        setTimeout(() => {
+            setActiveQuestion(question);
+            setActiveColor(COLORS['action']);
+        }, 2400);
         setIsAnimatingAction(false);
         setTimeout(() => setIsAnimatingAction(true), 0);
 
@@ -39,8 +50,10 @@ const Deck = () =>{
     const handleClickTruth = () => {
         
         let question = getRandomQuestion(TRUTH_QUESTIONS) 
-        
-        setTimeout(() => setActiveQuestion(question), 2200);
+        setTimeout(() => {
+            setActiveColor(COLORS['truth']); 
+            setActiveQuestion(question)
+        }, 2400);
         setIsAnimatingTruth(false);
         setTimeout(() => setIsAnimatingTruth(true), 0);
     };
@@ -73,7 +86,7 @@ const Deck = () =>{
             </div>
         </div>
         <TruthCard isAnimating={isAnimatingTruth}/>
-        <Card question={activeQuestion}/>
+        <Card color={activeColor} question={activeQuestion}/>
         </>
       
 

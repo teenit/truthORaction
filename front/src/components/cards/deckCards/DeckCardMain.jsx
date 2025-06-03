@@ -8,6 +8,7 @@ const DeckCardMain = () => {
 
   return(
     <>
+      <div className="">Правда або дія</div>
       <div className="container">
         <Deck />
       </div>      

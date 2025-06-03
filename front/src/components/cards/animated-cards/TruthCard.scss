@@ -11,17 +11,19 @@
   border-radius: 15px;
   rotate: calc(90deg);
   transition: .5s;
-  z-index: 1000;
+  z-index: -1;
   opacity: 0;
   /* НЕ ставимо animation тут */
 }
 
 .animateCard {
+  display: none;
   animation-name: CardAnimation;
   animation-iteration-count: 1;
   animation-duration: 3s;
   animation-direction: alternate;
     animation-fill-mode: forwards; // ← Додати
+    z-index: 1000;
 }
 
 @keyframes CardAnimation {
@@ -32,6 +34,7 @@
     top: -100px;
     rotate: calc(90deg);
     opacity: 0;
+    display: block;
   }
   25% {
     width: 350px;
@@ -40,6 +43,7 @@
     top: 245px;
     rotate: calc(0deg);
     opacity: 100;
+    display: block;
   }
   50%{
     width: 350px;
@@ -48,14 +52,16 @@
     top: 245px;
     rotate: calc(0deg);
     opacity: 100;
+    display: block;
   }
   90%{
     width: 350px;
     height: 210px;
-    left: 593px;
+    left: 430px;
     top: 245px;
     rotate: calc(0deg);
     opacity: 0;
+    display: block;
   }
   100%{
     width: 350px;
@@ -64,5 +70,6 @@
     top: -100px;
     rotate: calc(90deg);
     opacity: 0;
+    display: none;
   }
 }

@@ -7,6 +7,7 @@ const VanyaPage = () =>{
             <h1>
                 Vanya Page
             </h1>
+            Правда або дія
             <Vanya />
         </div>
     )
